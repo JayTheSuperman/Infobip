@@ -58,19 +58,19 @@
                         }
                     ]
                 }`;
-            console.log(data);
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Authorization': 'App 2d7ea92fff58cfe119d6831a0fa223cc-1b7f4bc1-ea47-4bd1-87d3-bf85bb070e69',
-                    'Content-Type': 'application/json',
-                },
-                body: data,
-            });
-            const text = await response.text();
-            console.log(text);
-            console.log(phone);
-            window.location.href = 'Promo.html';
+                console.log(data);
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'App 2d7ea92fff58cfe119d6831a0fa223cc-1b7f4bc1-ea47-4bd1-87d3-bf85bb070e69',
+                        'Content-Type': 'application/json',
+                    },
+                    body: data,
+                });
+                const text = await response.text();
+                console.log(text);
+                console.log(phone);
+                window.location.href = 'Promo.html';
         } catch (error) {
             console.error('Error:', error);
         }
